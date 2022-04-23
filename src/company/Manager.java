@@ -3,6 +3,7 @@ package company;
 public class Manager extends Employee {
 
     private int bonus;
+    private Secratary secratary;
 
     public Manager(String name, int salary) {
         super(name, salary,0);
@@ -13,6 +14,18 @@ public class Manager extends Employee {
         super(name, salary, age);
         this.bonus = bonus;
         System.out.println("Wywołuje konstruktor2 klasy Managerz z argumentami: "+ name + " i "+ salary + " i " + bonus);
+    }
+
+    public void setSecratary(Secratary secratary) {
+        this.secratary = secratary;
+    }
+
+    public void makeCall(String number){
+        if (secratary == null){
+            System.out.println("Nie umiem dzwonić");
+        }else {
+            secratary.makeCall(number);
+        }
     }
 
     public void makeSpeech () {

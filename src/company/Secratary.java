@@ -9,6 +9,6 @@ public final class Secratary extends Employee {
     }
 
     public void makeCall(String number) {
-        System.out.printf("Dzwonie do " + number);
+        System.out.printf("Dzwonie do: " + number);
     }
 }
