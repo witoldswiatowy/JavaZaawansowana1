@@ -1,4 +1,4 @@
-package com.company.vehicles;
+package vehicles;
 
 public class Car {
     private String brand;
@@ -21,4 +21,11 @@ public class Car {
         System.out.println("To jest " + brand + " " + model);
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                '}';
+    }
 }
