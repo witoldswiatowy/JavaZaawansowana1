@@ -6,7 +6,7 @@ public class Cat extends Animal implements Runner{
     }
 
     @Override
-    void saySomthing() {
+    public void saySomething() {
         System.out.println(name + " miau miau");
     }
 
